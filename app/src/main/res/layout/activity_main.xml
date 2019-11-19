@@ -21,6 +21,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="125dp"
+        android:background="@drawable/button_background"
         android:backgroundTint="#E91E63"
         android:onClick="onButton1"
         android:text="ルート見学"
@@ -31,6 +32,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="125dp"
+        android:background="@drawable/button_background"
         android:backgroundTint="#FF9800"
         android:onClick="onButton2"
         android:text="スポット選択"
@@ -41,6 +43,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="119dp"
+        android:background="@drawable/button_background"
         android:backgroundTint="#03A9F4"
         android:onClick="onButton3"
         android:text="避難経路辿り"
