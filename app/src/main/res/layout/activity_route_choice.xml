@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="4dp"
-            android:text="ルート見学"
+            android:text="ルート決定方法を選択して下さい"
             android:textAlignment="textStart"
             android:textColor="#838383"
             android:textSize="18sp"
