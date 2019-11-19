@@ -8,11 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.NoTitleBar">
+        android:theme="@style/AppTheme">
         <activity android:name=".RouteChoiceTimeActivity"></activity>
         <!--
         // タイトルバー非表示のため<application>から削除
         android:theme="@style/AppTheme"
+        android:theme="@android:style/Theme.NoTitleBar"
         -->
         <activity android:name=".EscapeActivity" />
         <activity android:name=".SpotActivity" />

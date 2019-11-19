@@ -9,18 +9,18 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="84dp"
-        android:background="#555555"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
         android:gravity="center"
         android:text="タイトル画面"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#645D5D"
         android:textSize="50sp"
         android:textStyle="bold" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="125dp"
         android:backgroundTint="#E91E63"
         android:onClick="onButton1"
         android:text="ルート見学"
@@ -30,7 +30,7 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="125dp"
         android:backgroundTint="#FF9800"
         android:onClick="onButton2"
         android:text="スポット選択"
@@ -40,7 +40,7 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="119dp"
         android:backgroundTint="#03A9F4"
         android:onClick="onButton3"
         android:text="避難経路辿り"
@@ -50,12 +50,17 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="113dp"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:backgroundTint="#BDBDBD"
         android:onClick="onClose"
         android:text="閉じる"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        app:srcCompat="@drawable/ic_trending_up_black_24dp" />
 
 </LinearLayout>

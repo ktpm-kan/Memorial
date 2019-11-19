@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.app.Activity; // タイトルバー非表示に使用
+import android.app.Activity;
 
-public class EscapeActivity extends Activity {
+public class EscapeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
