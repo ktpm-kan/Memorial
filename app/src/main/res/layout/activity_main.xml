@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="#555555"
+        android:gravity="center"
+        android:text="タイトル画面"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:backgroundTint="#E91E63"
+        android:onClick="onButton1"
+        android:text="ルート見学"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="onButton2"
+        android:text="スポット選択"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:backgroundTint="#03A9F4"
+        android:onClick="onButton3"
+        android:text="避難経路辿り"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#BDBDBD"
+        android:onClick="onClose"
+        android:text="閉じる"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
