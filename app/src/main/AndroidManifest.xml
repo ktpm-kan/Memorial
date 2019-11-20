@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RouteChoiceSpotActivity"></activity>
+        <activity android:name=".RouteMapActivity"></activity>
+        <activity android:name=".RouteChoiceSpotActivity" />
         <activity android:name=".RouteChoiceTimeActivity" />
         <!--
         // タイトルバー非表示のため<application>から削除

@@ -70,7 +70,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button30min"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
@@ -81,10 +81,11 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#963A3A"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="onButton1"/>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/button60min"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -95,10 +96,11 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#963A3A"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="onButton1"/>
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/button90min"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -109,10 +111,11 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#963A3A"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="onButton1"/>
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/button120min"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -123,10 +126,11 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#963A3A"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="onButton1"/>
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/button150min"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -137,7 +141,8 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#963A3A"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="onButton1"/>
     </LinearLayout>
 
 </LinearLayout>
