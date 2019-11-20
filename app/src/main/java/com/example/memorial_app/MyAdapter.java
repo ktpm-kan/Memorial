@@ -16,7 +16,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     private List<Integer> iImages;
     private List<String> iNames;
-    private List<String> iEmails;
+    private List<String> iCaption;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -26,20 +26,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // each data item is just a string in this case
         ImageView imageView;
         TextView textView;
-        TextView emailView;
+        TextView captionView;
 
         ViewHolder(View v) {
             super(v);
             imageView = v.findViewById(R.id.image_view);
             textView = v.findViewById(R.id.text_view);
-            emailView = v.findViewById(R.id.email_view);        }
+            captionView = v.findViewById(R.id.caption_view);        }
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    MyAdapter(List<Integer> itemImages, List<String> itemNames, List<String> itemEmails) {
+    MyAdapter(List<Integer> itemImages, List<String> itemNames, List<String> itemCaptions) {
         this.iImages = itemImages;
         this.iNames = itemNames;
-        this.iEmails = itemEmails;
+        this.iCaption = itemCaptions;
     }
 
     // Create new views (invoked by the layout manager)
@@ -62,7 +62,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // - replace the contents of the view with that element
         holder.imageView.setImageResource(iImages.get(position));
         holder.textView.setText(iNames.get(position));
-        holder.emailView.setText(iEmails.get(position));    }
+        holder.captionView.setText(iCaption.get(position));    }
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
