@@ -9,13 +9,17 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="214dp">
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:background="@color/colorSub"
+        android:elevation="@dimen/margin">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/TextTitle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#CACACA"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:gravity="center"
             android:text="せんだい3.11"
             android:textAlignment="center"
@@ -32,11 +36,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="vertical"
-        android:padding="30dp">
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="10dp">
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/ButtonRoute"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -49,29 +57,31 @@
             android:textStyle="bold" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_background"
-            android:onClick="onButton3"
-            android:text="避難経路辿り"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button8"
+            android:id="@+id/ButtonSpot"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_background"
             android:onClick="onButton2"
-            android:text="スポット検索"
+            android:text="スポット一覧"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ButtonRequest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:onClick="onButton3"
+            android:text="リクエスト"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
 </LinearLayout>

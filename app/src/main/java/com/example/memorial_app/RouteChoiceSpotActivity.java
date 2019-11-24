@@ -2,6 +2,8 @@ package com.example.memorial_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +15,8 @@ import java.util.Locale;
 
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
 
 
 public class RouteChoiceSpotActivity extends AppCompatActivity {
@@ -26,7 +30,7 @@ public class RouteChoiceSpotActivity extends AppCompatActivity {
     }
 
     // *************************************************
-    // RecyclerView
+    // *                RecyclerView                   *
     // *************************************************
     private static final String[] names = {
             "日和山", "蒲生干潟", "仙台市立荒浜小学校",
@@ -56,6 +60,9 @@ public class RouteChoiceSpotActivity extends AppCompatActivity {
             "創建当時は今の場所から500mほど南東に位置したとされている",
             "浪分神社にあやかり名づけられ，3.11の津波到達地周辺に目安木として植えられた桜"
     };
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,19 +86,10 @@ public class RouteChoiceSpotActivity extends AppCompatActivity {
         List<Integer> itemImages = new ArrayList<Integer>(Arrays.asList(photos));
         List<String> itemCaptions = new ArrayList<String>(Arrays.asList(captions));
 
-        // 多分無駄処理だけど未解読（emailの名残）
-        // 下のコードにしようとしたけど無理だった
-        /*
-        List<String> itemCaptions = new ArrayList<String>();
-        for(int i=0; i<itemNames.size() ;i++ ){
-            String str = String.format(Locale.ENGLISH, "%s", itemNames.get(i));
-            itemCaptions.add(str);
-        }*/
-
-
         // specify an adapter (see also next example)
         RecyclerView.Adapter rAdapter = new MyAdapter(itemImages, itemNames, itemCaptions);
         recyclerView.setAdapter(rAdapter);
 
     }
+
 }

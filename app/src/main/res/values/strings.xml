@@ -2,4 +2,8 @@
     <string name="app_name">Memorial_App</string>
     <string name="description1">background</string>
     <string name="description2">picture</string>
+    <string name="title_activity_spot_main">SpotMainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

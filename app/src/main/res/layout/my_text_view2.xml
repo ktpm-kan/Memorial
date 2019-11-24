@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:baselineAligned="false"
     android:orientation="horizontal"
     android:paddingLeft="20dp"
-    android:paddingTop="8dp"
+    android:paddingTop="1dp"
     android:paddingRight="20dp"
-    android:paddingBottom="8dp">
+    android:paddingBottom="1dp">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="30dp"
-        android:layout_height="109dp"
-        android:gravity="center"
-        android:text="⬜"
-        android:textColor="#5F5F5F"
-        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:srcCompat="@drawable/route_line" />
 
     <RelativeLayout
+        android:id="@+id/img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <!-- 外枠用  -->
+        <!-- 枠を入れるだけで深い意味はありません -->
         <ImageView
-            android:layout_width="110dp"
-            android:layout_height="110dp"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
             android:background="@color/colorSub"
             android:contentDescription="@string/description1" />
 
         <ImageView
             android:id="@+id/image_view"
-            android:layout_width="106dp"
-            android:layout_height="106dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_marginStart="2dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="2dp"
@@ -42,8 +47,13 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignTop="@+id/img"
+        android:layout_alignBottom="@+id/img"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/img"
         android:layout_weight="1"
         android:background="#E0ECE8"
         android:orientation="vertical">
@@ -54,12 +64,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="9dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
             android:paddingStart="5dp"
             android:paddingEnd="10dp"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp"
+            android:textSize="26sp"
             android:textStyle="bold" />
 
         <TextView
@@ -74,8 +84,7 @@
             android:layout_marginTop="4dp"
             android:paddingStart="5dp"
             android:paddingEnd="10dp"
-            android:textColor="#80000000"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
     </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>

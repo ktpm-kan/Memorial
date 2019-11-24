@@ -10,33 +10,19 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="#FFFFFF">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="@dimen/margin"
-            android:layout_marginTop="@dimen/margin"
-            android:background="#00D87070"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_gps_fixed_black_24dp" />
+        android:background="#23837A"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
-            android:layout_height="42dp"
-            android:layout_alignTop="@+id/imageView"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_toEndOf="@+id/imageView"
-            android:text="スポット一覧"
+            android:text="仙台市立荒浜小学校"
             android:textAlignment="textStart"
-            android:textColor="#414141"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
@@ -47,42 +33,39 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/activity_spot"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.5"
-        android:background="#FFFFFF"
-        tools:context=".RouteChoiceSpot">
-        <!-- 上の id と context 変えるの忘れずに -->
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/my_recycler_view"
+        <ImageView
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#00FFFFFF">
-
-        </androidx.recyclerview.widget.RecyclerView>
-
-        <Button
-            android:id="@+id/ButtonArahama"
-            android:layout_width="match_parent"
-            android:layout_height="295dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
             android:background="#00FFFFFF"
-            android:onClick="onButton1" />
-
+            android:src="@drawable/arahama_school" />
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:background="#70FFFFFF"
+        android:text="立石知己 - 投稿者自身による作品, CC 表示-継承 4.0, https://commons.wikimedia.org/w/index.php?curid=58434355による"
+        android:textAlignment="textEnd"
+        android:textColor="#80000000"
+        android:textSize="7sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.8"
+        android:layout_weight="1.6"
         android:background="#00ECECEC"
         android:gravity="center"
-        android:paddingStart="30dp"
-        android:paddingTop="15dp"
-        android:paddingEnd="30dp"
-        android:paddingBottom="15dp">
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
 
         <Button
             android:id="@+id/button3"
@@ -92,10 +75,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:backgroundTint="@color/colorPrimary"
-            android:text="絞り込み"
+            android:text="スポットAR"
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
@@ -107,13 +89,29 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
             android:layout_weight="1"
             android:backgroundTint="@color/colorPrimary"
-            android:text="並び替え"
+            android:text="メモリー投稿"
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
     </LinearLayout>
 
+    <RelativeLayout
+        android:id="@+id/activity_spot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        tools:context=".RouteChoiceSpot">
+        <!-- 上の id と context 変えるの忘れずに -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
 
 </LinearLayout>
