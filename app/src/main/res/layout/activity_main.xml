@@ -21,7 +21,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:gravity="center"
-            android:text="せんだい3.11"
+            android:text="@string/app_name"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
@@ -51,7 +51,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_background"
             android:onClick="onButton1"
-            android:text="ルート見学"
+            android:text="@string/route_visit"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -64,7 +64,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_background"
             android:onClick="onButton2"
-            android:text="スポット一覧"
+            android:text="@string/spot_list"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -77,7 +77,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_background"
             android:onClick="onButton3"
-            android:text="リクエスト"
+            android:text="@string/setting"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold" />

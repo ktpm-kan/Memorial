@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButton3(View v) {
         // 画面指定
-        Intent intent = new Intent(this,EscapeActivity.class);
+        Intent intent = new Intent(this,SettingActivity.class);
         // 画面を開く
         startActivity(intent);
     }

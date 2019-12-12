@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 
@@ -32,11 +33,13 @@ public class RouteChoiceSpotActivity extends AppCompatActivity {
     // *************************************************
     // *                RecyclerView                   *
     // *************************************************
+
     private static final String[] names = {
             "日和山", "蒲生干潟", "仙台市立荒浜小学校",
             "中野小学校校舎跡", "荒浜祈りの塔", "井土の一本松",
             "南蒲生浄化センター", "農業園芸センター", "浪分神社", "浪分桜"
     };
+
 
     // それぞれの画像ファイルをdarawableに入れます
     // ArrayListにコピーするためintからInteger型にしました

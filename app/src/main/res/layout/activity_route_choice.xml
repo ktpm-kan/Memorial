@@ -33,7 +33,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
             android:layout_toEndOf="@+id/imageView"
-            android:text="ルート見学"
+            android:text="@string/route_visit"
             android:textAlignment="textStart"
             android:textColor="#414141"
             android:textSize="30sp"
@@ -51,7 +51,7 @@
             android:layout_alignStart="@+id/imageView"
             android:layout_marginStart="15dp"
             android:layout_marginTop="6dp"
-            android:text="ルート決定方法を選択して下さい"
+            android:text="@string/route_visit_caption"
             android:textAlignment="textStart"
             android:textColor="#838383"
             android:textSize="18sp"
@@ -76,13 +76,13 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_background"
+            android:onClick="onButton1"
             android:shadowColor="#00FFFFFF"
-            android:text="見学時間で選ぶ"
+            android:text="@string/choice_time"
             android:textColor="#FFFFFF"
             android:textColorHint="#963A3A"
             android:textSize="30sp"
-            android:textStyle="bold"
-            android:onClick="onButton1"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button2"
@@ -91,13 +91,13 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_background"
+            android:onClick="onButton2"
             android:shadowColor="#00FFFFFF"
-            android:text="スポットで選ぶ"
+            android:text="@string/spot_list"
             android:textColor="#FFFFFF"
             android:textColorHint="#963A3A"
             android:textSize="30sp"
-            android:textStyle="bold"
-            android:onClick="onButton2"/>
+            android:textStyle="bold" />
     </LinearLayout>
 
 </LinearLayout>
