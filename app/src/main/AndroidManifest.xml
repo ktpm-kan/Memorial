@@ -16,7 +16,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".MemoryFloatPostConfirmationActivity"></activity>
+        <activity android:name=".MemoryFloatPostActivity" />
+        <activity android:name=".MemoryFloatMainActivity" />
+        <activity android:name=".SettingActivity" />
         <activity android:name=".SpotDetailActivity" />
         <activity android:name=".RouteMapActivity" />
         <activity android:name=".RouteChoiceSpotActivity" />

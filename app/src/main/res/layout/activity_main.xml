@@ -76,7 +76,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/button_background"
-            android:onClick="onButton3"
+            android:onClick="onButton1"
             android:text="@string/setting"
             android:textColor="#FFFFFF"
             android:textSize="30sp"

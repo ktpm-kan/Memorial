@@ -38,6 +38,22 @@
 
     <!-- メモリーフロート -->
     <string name="memory_float">メモリーフロート</string>
+    <string name="memory_float_post_caption">*は必須入力です</string>
+    <string name="memory_post">メモリー投稿</string>
+    <string name="post">投稿</string>
+
+    <string name="poster_information">投稿者情報</string>
+    <string name="nickname">*ニックネーム</string>
+    <string name="age">年齢</string>
+    <string name="job">職業</string>
+    <string name="past_address">当時の居住地</string>
+    <string name="current_address">現在の居住地</string>
+
+    <string name="memory_information">メモリー情報</string>
+    <string name="memory">*メモリー</string>
+    <string name="time_series">*時系列</string>
+    <string name="picture">写真</string>
+    <string name="emotion">*感情</string>
 
     <!-- 設定 -->
     <string name="close">閉じる</string>
