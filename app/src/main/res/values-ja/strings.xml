@@ -32,6 +32,10 @@
     <string name="spot_list_sorting">並び替え</string>
 
     <string name="arahama_school">仙台市立荒浜小学校</string>
+    <string name="arahama_school_string">1873年に開校した荒浜小学校は，海から約700mの所に位置しており，震災では校舎2階まで津波が押し寄せた．
+        震災後5年間，東宮城野小学校の一部を間借りする形で存続したあと，荒浜小学校は2016年4月に七郷小学校と統合し，閉校した．
+        2017年4月30日から，震災遺構仙台市立荒浜小学校として公開を開始した．</string>
+    <string name="memory_float_posts">メモリーフロート投稿</string>
 
     <!-- スポットAR -->
     <string name="spot_ar">スポットAR</string>
@@ -58,6 +62,8 @@
 
     <string name="check_message">入力内容を確認してください</string>
     <string name="not_entered">未入力</string>
+
+    <string name="Empathy">共感ポイント</string>
 
     <!-- 設定 -->
     <string name="close">閉じる</string>

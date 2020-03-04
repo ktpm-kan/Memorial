@@ -32,6 +32,11 @@
     <string name="spot_list_sorting">Sorting</string>
 
     <string name="arahama_school">Sendai Arahama Elementary School</string>
+    <string name="arahama_school_string">Arahama Elementary School, which opened in 1873, is located approximately 700m from the sea.
+        The tsunami hit the school building on the second floor in the event of an earthquake.
+        Arahama Elementary School was integrated with Shichigo Elementary School in April 2016 and closed, after renting a part of Higashi-Miyano Elementary School for five years after the earthquake.
+        On April 30, 2017, the site was opened to the public as Arahama Elementary School, Sendai City.</string>
+    <string name="memory_float_posts">Memory float posts</string>
 
     <!-- スポットAR -->
     <string name="spot_ar">Spot AR</string>
@@ -58,6 +63,8 @@
 
     <string name="check_message">Please check your entries.</string>
     <string name="not_entered">Not entered</string>
+
+    <string name="Empathy">Empathy Point</string>
 
     <!-- 設定 -->
     <string name="close">Close</string>

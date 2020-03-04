@@ -17,13 +17,20 @@ public class MemoryFloatPostConfirmationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_memory_float_post_confirmation);
 
         // Get the Intent that started this activity and extract the string
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(MemoryFloatPostActivity.NICK_NAME);
+        Intent intent = getIntent();            // 遷移元から Intent を取得
+
+        String nickName = intent.getStringExtra(MemoryFloatPostActivity.NICK_NAME_DATA);
+        String age = intent.getStringExtra(MemoryFloatPostActivity.AGE_DATA);
+        String job = intent.getStringExtra(MemoryFloatPostActivity.JOB_DATA);
 
         // Capture the layout's TextView and set the string as its text
-        TextView textView = findViewById(R.id.NickNameData);
-        textView.setText(message);
+        TextView nickNameData = findViewById(R.id.NickNameData);
+        TextView ageData = findViewById(R.id.AgeData);
+        TextView jobData = findViewById(R.id.JobData);
 
+        nickNameData.setText(nickName);
+        ageData.setText(age);
+        jobData.setText(job);
     }
 
 
